@@ -1,0 +1,238 @@
+.mainNavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: .5rem 5rem !important;
+    z-index: 1;
+    border-bottom: 2px solid #ddd;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.mainNavbar div img {
+    width: 70px;
+}
+
+.mainNavbar .contentNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+}
+
+.mainNavbar .contentNav .row1 ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 1rem;
+    padding: 0 !important;
+}
+
+
+.mainNavbar .contentNav .row1 ul li {
+    text-align: center;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+
+.mainNavbar button {
+    background-color: #3c4043;
+    color: #fff;
+    border-radius: 0;
+    padding: .5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dropdown-large {
+    padding: 10px;
+    position: relative;
+}
+
+.navBar {
+    position: relative;
+}
+
+.navbar-expand-lg {
+    padding: 0 !important;
+}
+
+.nav-link.dropdown-toggle {
+    font-weight: bold;
+}
+
+.dropdown-menu.dropdown-large li {
+    margin-bottom: 1rem;
+}
+
+.dropdown-menu.dropdown-large .title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #de5a28;
+}
+
+.dropdown-menu.dropdown-large.data1 {
+    margin-top: 1.17rem;
+    padding: 2rem;
+    border-radius: 0;
+}
+
+.dropdown-menu.dropdown-large.data1 .d-flex {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.dropdown-menu.dropdown-large.data1 .d-flex .col-md-4 {
+    width: 300px;
+}
+
+.dropdown-menu.dropdown-large.data2 {
+    width: 300px;
+    padding: 2rem;
+    margin-top: 0.5rem;
+}
+
+.nav-item.dropdown .nav-link.dropdown-toggle {
+    color: #000 !important;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 600 !important;
+}
+
+.nav-item.dropdown .nav-link.dropdown-toggle:hover {
+    color: #de5a28 !important;
+}
+
+.loc .dropdown-toggle::after {
+    display: none !important;
+}
+
+.dropdown-toggle::after {
+    margin-left: 1rem !important;
+}
+
+.dropdown-menu.dropdown-large a {
+    color: #282c34;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.nav-link.dropdown-toggle {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: aliceblue;
+}
+
+.rowDisplay {
+    display: none !important;
+}
+
+@media screen and (max-width: 1200px) {
+    .mainNavbar {
+        padding: .5rem 2rem !important;
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    .mainNavbar {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .mainNavbar {
+        justify-content: center;
+        padding: .5rem 1rem !important;
+    }
+}
+
+@media all and (min-width: 985px) {
+    .dropdown-large {
+        min-width: 500px;
+    }
+}
+
+@media screen and (max-width: 985px) {
+    .navBar {
+        width: 100% !important;
+    }
+
+    .contentNav .row1 {
+        display: none !important;
+    }
+
+    .mainNavbar {
+        justify-content: flex-start !important;
+    }
+
+    .rowDisplay {
+        display: block !important;
+        list-style: none !important;
+        margin-top: 2rem;
+        padding: 0 !important;
+    }
+
+    .dropdown-menu.dropdown-large.data1 .d-flex .col-md-4 {
+        width: 100% !important;
+    }
+
+    .dropdown-menu.dropdown-large.data2 {
+        width: 100% !important;
+        padding: 2rem;
+        margin-top: 0.5rem;
+    }
+
+    .rowDisplay li {
+        list-style: none;
+        margin-top: 10px;
+    }
+
+    .dropdown-menu.dropdown-large.data1 {
+        margin-top: 1.3rem;
+        padding: 2rem;
+        margin-left: 0;
+        width: auto !important;
+    }
+
+    .dropdown-menu.dropdown-large.data1 .d-flex {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .navbar-nav {
+        margin-top: 2rem;
+        max-width: 100% !important;
+
+    }
+
+    .nav-item.dropdown {
+        margin-top: 1rem;
+        border-bottom: 1px solid #555;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1.4rem;
+    }
+
+    .dropdown-menu.dropdown-large.data2 {
+        width: 100%;
+    }
+
+    .nav-link.dropdown-toggle {
+        margin-left: 0;
+    }
+
+    .dropdown-toggle::after {
+        float: right;
+    }
+
+}

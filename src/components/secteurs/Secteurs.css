@@ -1,0 +1,132 @@
+.secteurs {
+    padding: 2rem 5rem 2rem 5rem;
+    width: 100%;
+}
+
+.secteurs .row1 {
+    margin-bottom: 2rem;
+    width: 100%;
+    margin: auto auto 2rem auto;
+    text-align: center;
+}
+
+.secteurs .row1 .title {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Poppins";
+}
+
+.secteurs .row2 {
+    display: grid;
+    grid-template-columns: repeat(3, 28%);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.secteurs .row2 .card {
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    height: 500px;
+    border-radius: 0;
+}
+
+.secteurs .row2 .textBtn {
+    height: 50%;
+}
+
+.secteurs .row2 .textBtn .title {
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+    width: 70%;
+}
+
+.secteurs .row2 .card:first-child .textBtn {
+    background-color: #df652d;
+    position: relative;
+}
+
+.secteurs .row2 .card:first-child .textBtn button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 0;
+    background-color: #3c4043;
+    padding: 1rem;
+    color: #fff;
+}
+
+.secteurs .row2 .card .imageEntreprendre {
+    height: 50%;
+    width: 100%;
+}
+
+.secteurs .row2 .card .imageEntreprendre img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.secteurs .row2 .card:nth-child(2) .textBtn {
+    background-color: #ef3e33;
+    position: relative;
+}
+
+.secteurs .row2 .card:nth-child(2) .textBtn button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 0;
+    background-color: #3c4043;
+    padding: 1rem;
+    color: #fff;
+}
+
+
+.secteurs .row2 .card:nth-child(3) .textBtn {
+    background-color: #087564;
+    position: relative;
+}
+
+.secteurs .row2 .card:nth-child(3) .textBtn button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 0;
+    background-color: #3c4043;
+    padding: 1rem;
+    color: #fff;
+}
+
+@media screen and (max-width: 1300px) {
+    .secteurs .row2 .textBtn .title {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .secteurs {
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .secteurs .row2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secteurs .row2 .card {
+        width: 100%;
+    }
+
+    .secteurs {
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,268 @@
+.rx {
+    background-color: #efefef;
+}
+
+.rx {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 90%;
+    padding: 2rem 4rem;
+    margin: auto;
+}
+
+.rx .row1 {
+    width: 100%;
+}
+
+.rx .row1 .title {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+
+.rx .row1 .col-sm-6 {
+    background-color: #ffffff;
+}
+
+.rx .row1 .col-sm-6:first-child {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.rx .iconsRx {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.rx .row1 .iconsText {
+    display: flex;
+    align-items: center;
+    gap: 1rem !important;
+}
+
+.rx .row1 .iconsText img {
+    width: 60px;
+}
+
+.rx .row1 .desc {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.rx .row1 .desc .nbr {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: "Poppins";
+}
+
+.rx .row1 .col1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.rx .row1 .desc .fb {
+    color: #1877f2 !important;
+}
+
+.rx .row1 .desc .in {
+    color: #9e32b4 !important;
+}
+
+.rx .row1 .desc .tw {
+    color: #3aa9e0 !important;
+}
+
+.rx .row1 .desc .yt {
+    color: #d91f1d !important;
+}
+
+.rx .row1 .col-sm-6:last-child {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.rx .row1 .col-sm-6:last-child div:last-child {
+    width: 100%;
+    height: 250px;
+    overflow-y: scroll;
+}
+
+
+.rx .row1 .col-sm-6:last-child div:last-child img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.rx .row2 {
+    width: 100% !important;
+}
+
+.rx .row2 .col-sm-6 {
+    height: 300px;
+}
+
+.rx .row2 .col-sm-6:first-child {
+    display: flex;
+    flex-direction: column !important;
+    padding: 1rem 5rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: #087564;
+    color: #ffffff;
+}
+
+
+.rx .row2 .col-sm-6:first-child .title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center !important;
+}
+
+
+.rx .row2 .col-sm-6:first-child button {
+    color: #fff;
+    border-radius: 0;
+    background-color: #62b0a3;
+    padding: 1rem 2rem;
+    width: 17%;
+    width: auto;
+    font-weight: 600;
+}
+
+.rx .row2 .col-sm-6:last-child {
+    display: flex;
+    flex-direction: row !important;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 4rem;
+    background-color: #df652d;
+    color: #ffffff;
+}
+
+.rx .row2 .col-sm-6:last-child .desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rx .border {
+    height: 20%;
+}
+
+.rx .iconText {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.rx .iconText svg {
+    font-size: 2rem;
+}
+
+.rx .iconText span {
+    font-size: 2rem;
+}
+
+@media screen and (max-width:1035px) {
+    .rx {
+        padding: 4rem 1rem;
+    }
+}
+
+@media screen and (max-width:945px) {
+    .rx .row1 .row {
+        flex-direction: column !important;
+    }
+
+    .rx .row1 .row .col-sm-6 {
+        width: 100% !important;
+    }
+
+    .rx .row2 .col-sm-6 {
+        min-height: 300px;
+    }
+
+    .rx .row2 .col-sm-6:first-child{
+        padding: 2rem 1rem !important;
+    }
+}
+
+@media screen and (max-width:540px) {
+
+    .rx .iconsRx {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between !important;
+
+    }
+
+    .rx .iconsRx .col1 {
+        flex-direction: row;
+        justify-content: space-between !important;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+
+    .rx .row2 .col-sm-6:first-child {
+        height: auto !important;
+    }
+
+    .rx .row2 .col-sm-6:first-child button{
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width:420px) {
+
+    .rx .nbr {
+        font-size: 1.2rem !important;
+    }
+
+    .rx .iconsRx .col1 {
+        gap: 0 !important;
+    }
+
+    .rx .iconsRx {
+        gap: 1rem;
+    }
+
+    .rx .row1 .col-sm-6:first-child{
+        justify-content: flex-start !important;
+    }
+
+    .rx .iconText span {
+        font-size: 1.4rem !important;
+    }
+
+    .rx .iconText svg {
+        font-size: 1.2rem
+    }
+
+    .rx .row1 .iconsText{
+        gap: 0 !important;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .rx .row1 .iconsText img{
+        width: 40px;
+    }
+}

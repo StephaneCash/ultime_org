@@ -1,0 +1,107 @@
+.carte {
+    padding: 4rem 5rem;
+    background-color: #fff;
+}
+
+.carte .large-title {
+    font-family: "Poppins";
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+.carte .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 2rem;
+    gap: 5rem;
+}
+
+
+.carte .card .text {
+    width: 26%;
+    background-color: #df652d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    height: 470px;
+    padding: 2rem;
+}
+
+.carte .card .title-small {
+    width: 100% !important;
+    padding: 0;
+    font-size: 1.7rem;
+    font-family: "Poppins";
+    color: #fff;
+}
+
+.carte .card .desc {
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.carte .card .button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.carte .card .button .btn {
+    background-color: #3c4043;
+    border-radius: 0;
+    color: #fff;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 1300px) {
+    .carte {
+        padding: 4rem 2rem;
+    }
+
+    .carte .card .text {
+        width: 50%;
+    }
+
+    .carte .card {
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .carte .card .text {
+        height: auto;
+    }
+
+    .imageCarte {
+        width: 45%;
+    }
+
+    .imageCarte img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .carte .card {
+        flex-direction: column;
+    }
+
+    .carte .card .text {
+        width: 100%;
+    }
+
+    .imageCarte {
+        width: 100%;
+    }
+
+    .carte {
+        padding: 4rem 1rem;
+    }
+}

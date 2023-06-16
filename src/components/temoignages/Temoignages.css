@@ -1,0 +1,107 @@
+.temoignages {
+    width: 100%;
+    background-color: #ddd;
+    position: relative;
+    height: 100%;
+    padding: 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.temoignages .title {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Poppins";
+    width: auto !important;
+    text-align: center;
+}
+
+.temoignages .mainContent {
+    height: 300px;
+    width: 60%;
+    margin: auto;
+    background: #ddd;
+    padding: 1rem;
+}
+
+.swiper {
+    width: 100% !important;
+    height: 100% !important;
+    margin-top: 1rem;
+}
+
+.swiper-slide {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.swiper-slide .text {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.swiper-slide .text svg {
+    font-size: 4rem;
+    color: #df652d;
+}
+
+.swiper-slide .content {
+    line-height: 2rem;
+    font-family: "Poppins" !important;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.swiper-slide .content span {
+    font-size: 1.1rem;
+}
+
+.swiper-slide .text p {
+    font-size: 1.5rem;
+}
+
+.swiper-button-prev {
+    display: block !important;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bulle {
+    width: 15px;
+    height: 15px;
+    background-color: #df652d;
+}
+
+.swiper-horizontal>.swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+    background-color: #ba927f;
+    display: none;
+}
+
+.swiper-scrollbar-drag {
+    background-color: #df652d;
+}
+
+@media screen and (max-width:1200px) {
+    .mainContent {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .temoignages {
+        padding: 4rem 1rem;
+    }
+
+   .swiper-pagination{
+    margin-top: 78px !important;
+   }
+}
