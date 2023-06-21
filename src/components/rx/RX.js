@@ -32,7 +32,6 @@ const RX = () => {
                                     </div>
                                 </div>
                             </div>
-
                             <div className='col1'>
                                 <div className='iconsText'>
                                     <img src={twitter} alt="" />
