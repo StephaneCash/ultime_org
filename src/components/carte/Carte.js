@@ -22,7 +22,6 @@ const Carte = () => {
                         <button className='btn'>Découvrir</button>
                     </div>
                 </div>
-
                 <div className='imageCarte'>
                     <img src={carte} alt="Image_carte" />
                 </div>
