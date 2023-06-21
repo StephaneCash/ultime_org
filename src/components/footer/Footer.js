@@ -6,6 +6,7 @@ const Footer = () => {
 
     return (
         <footer id="footer">
+            
             <div className='footer'>
                 <div className='content'>
                     <a href="#">Mentions légales</a>
