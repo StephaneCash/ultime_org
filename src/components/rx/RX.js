@@ -16,6 +16,7 @@ const RX = () => {
                     <div className='col-sm-6'>
                         <div className='title'>Retrouvez-nous sur:</div>
                         <div className='iconsRx'>
+                            
                             <div className='col1'>
                                 <div className='iconsText'>
                                     <img src={facebook} alt="" />
@@ -49,7 +50,7 @@ const RX = () => {
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                     <div className='col-sm-6'>
