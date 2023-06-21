@@ -19,12 +19,13 @@
     border: 0;
     border-radius: 0;
     margin-bottom: 2rem;
+    width: 100%;
+    margin: auto;
     gap: 5rem;
 }
 
-
-.carte .card .text {
-    width: 26%;
+.carte .card .textDesc {
+    width: 50%;
     background-color: #df652d;
     display: flex;
     flex-direction: column;
@@ -52,12 +53,19 @@
     justify-content: flex-end;
 }
 
-
 .carte .card .button .btn {
     background-color: #3c4043;
     border-radius: 0;
     color: #fff;
     padding: 1rem;
+}
+
+.carte .card .imageCarte{
+    width: 50%;
+}
+
+.carte .card img{
+    width: 100%;
 }
 
 @media screen and (max-width: 1300px) {
@@ -75,7 +83,7 @@
 }
 
 @media screen and (max-width: 1030px) {
-    .carte .card .text {
+    .carte .card .textDesc {
         height: auto;
     }
 
@@ -93,12 +101,12 @@
         flex-direction: column;
     }
 
-    .carte .card .text {
+    .carte .card .textDesc {
         width: 100%;
     }
 
     .imageCarte {
-        width: 100%;
+        width: 100% !important;
     }
 
     .carte {
