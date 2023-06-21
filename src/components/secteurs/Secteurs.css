@@ -16,6 +16,7 @@
     font-family: "Poppins";
 }
 
+
 .secteurs .row2 {
     display: grid;
     grid-template-columns: repeat(3, 28%);
