@@ -1,7 +1,7 @@
 .agir {
     background-color: #df652d;
     width: 100%;
-    padding: 5rem ;
+    padding: 5rem;
 }
 
 .agir .title-important {
@@ -12,6 +12,7 @@
     justify-content: center;
     margin-bottom: 2rem;
 }
+
 .agir .cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, 23%);
@@ -44,9 +45,10 @@
 }
 
 @media screen and (max-width:760px) {
-    .agir{
+    .agir {
         padding: 4rem 1rem;
     }
+
     .agir .cards {
         grid-template-columns: repeat(auto-fill, 100%);
     }
