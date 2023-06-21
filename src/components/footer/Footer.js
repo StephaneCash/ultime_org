@@ -6,7 +6,6 @@ const Footer = () => {
 
     return (
         <footer id="footer">
-
             <div className='footer'>
                 <div className='content'>
                     <a href="#">Mentions légales</a>
@@ -24,7 +23,7 @@ const Footer = () => {
                     &copy; Fondation ultime Espoir & Compagnies 2023 tous droits réservés - Mentions légales
                 </p>
             </div>
-            
+
         </footer>
     )
 }
