@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Accueil.css"
-import imgAc from "../../assets/images/pro.png"
+import imgAc from "../../assets/images/main.jpg"
 import { FaArrowRight } from 'react-icons/fa';
 
 const Accueil = () => {
