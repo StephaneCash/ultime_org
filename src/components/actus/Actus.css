@@ -78,23 +78,23 @@
 }
 
 @media screen and (max-width:1200px) {
-    .actus{
+    .actus {
         padding: 4rem 4rem;
     }
 }
 
 @media screen and (max-width:1100px) {
-    .actus{
+    .actus {
         padding: 4rem 1rem;
     }
 
-    .actus .grille{
+    .actus .grille {
         grid-template-columns: repeat(3, 30%);
     }
 }
 
 @media screen and (max-width:700px) {
-    .actus .grille{
+    .actus .grille {
         display: flex;
         flex-direction: column;
     }
