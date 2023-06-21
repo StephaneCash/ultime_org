@@ -49,6 +49,7 @@ const RX = () => {
                                     </div>
                                 </div>
                             </div>
+                            
                         </div>
                     </div>
                     <div className='col-sm-6'>
