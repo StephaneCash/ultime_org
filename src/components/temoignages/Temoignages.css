@@ -23,6 +23,7 @@
     background: #ddd;
     padding: 1rem;
 }
+
 .swiper {
     width: 100% !important;
     height: 100% !important;
@@ -100,7 +101,7 @@
         padding: 4rem 1rem;
     }
 
-   .swiper-pagination{
-    margin-top: 78px !important;
-   }
+    .swiper-pagination {
+        margin-top: 78px !important;
+    }
 }
