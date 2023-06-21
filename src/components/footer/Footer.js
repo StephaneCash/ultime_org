@@ -13,7 +13,6 @@ const Footer = () => {
                     <a href="#">Questions-réponses</a>
                     <a href="#">Il faut tout un village pour grandir</a>
                 </div>
-
                 <div className='adresse'>
                     17, Croisement Tombalbaye/TravailleursC/ Gombe. Référence : en face de l’hôtel Belle vie Kinshasa, République démocratique du Congo
                 </div>
