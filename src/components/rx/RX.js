@@ -16,7 +16,6 @@ const RX = () => {
                     <div className='col-sm-6'>
                         <div className='title'>Retrouvez-nous sur:</div>
                         <div className='iconsRx'>
-                            
                             <div className='col1'>
                                 <div className='iconsText'>
                                     <img src={facebook} alt="" />
