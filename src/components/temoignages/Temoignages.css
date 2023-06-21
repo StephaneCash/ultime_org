@@ -88,7 +88,6 @@
 .swiper-scrollbar-drag {
     background-color: #df652d;
 }
-
 @media screen and (max-width:1200px) {
     .mainContent {
         width: 100% !important;
