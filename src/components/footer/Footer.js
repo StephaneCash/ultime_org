@@ -22,7 +22,6 @@ const Footer = () => {
                     &copy; Fondation ultime Espoir & Compagnies 2023 tous droits réservés - Mentions légales
                 </p>
             </div>
-
         </footer>
     )
 }
