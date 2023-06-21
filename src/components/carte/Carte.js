@@ -7,7 +7,6 @@ const Carte = () => {
         <div className='carte'>
             <div className='large-title'>Carte des établissements et associations</div>
             <div className='card'>
-                
                 <div className='text'>
                     <div className='title-small'>
                         Au coeur des territoires
