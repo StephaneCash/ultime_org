@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Carte.css"
-import carte from "../../assets/images/map-etablissements.png"
+import carte from "../../assets/images/drc.png"
 
 const Carte = () => {
     return (

@@ -1,8 +1,8 @@
 import React from 'react'
 import "./Secteurs.css"
-import im1 from "../../assets/images/im3.jpg"
-import im2 from "../../assets/images/im4.jpeg"
-import im3 from "../../assets/images/im5.jpeg"
+import im1 from "../../assets/images/main.jpg"
+import im2 from "../../assets/images/main.jpg"
+import im3 from "../../assets/images/main.jpg"
 
 const Secteurs = () => {
     return (

@@ -1,8 +1,8 @@
 import React from 'react';
 import "./Actus.css"
-import im3 from "../../assets/images/im3.jpg";
-import im4 from "../../assets/images/im4.jpeg";
-import im5 from "../../assets/images/im5.jpeg";
+import im3 from "../../assets/images/main.jpg";
+import im4 from "../../assets/images/main.jpg";
+import im5 from "../../assets/images/main.jpg";
 
 const Actus = () => {
     return (
