@@ -48,7 +48,7 @@
 
 .don .btnJedonne button {
     color: #fff;
-    border-radius: 0;
+    border-radius: 3px;
     background-color: #3c4043;
     padding: 1rem 2rem;
 }

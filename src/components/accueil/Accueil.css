@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
-    background-color: #ddd;
+    background-color: #fff;
 }
 
 .acceuil .text {
@@ -57,7 +57,7 @@
 
 .acceuil .text div button {
     background-color: #3c4043;
-    border-radius: 0;
+    border-radius: 3px;
     color: #fff;
     display: flex;
     align-items: center;

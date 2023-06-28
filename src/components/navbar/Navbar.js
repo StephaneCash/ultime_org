@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Navbar.css"; 
+import "./Navbar.css";
 import { Link } from 'react-router-dom';
 import $ from "jquery"
 import logo from "../../assets/images/logo.png"
@@ -22,7 +22,11 @@ const Navbar = () => {
                 <div className='row1'>
                     <ul>
                         <li>Recrutement</li>
-                        <li>Actus</li>
+                        <li>
+                            <a href="#actus">
+                                Actus
+                            </a>
+                        </li>
                         <li>Publications</li>
                         <li>Espace presse</li>
                         <li>Transparence financière</li>
@@ -62,69 +66,32 @@ const Navbar = () => {
 
                                 <li className="nav-item dropdown">
                                     <Link className="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Nos actions </Link>
-                                    <div className="dropdown-menu  dropdown-large data1">
-                                        <div className="d-flex">
-                                            <div className='col-md-4'>
-                                                <h6 className="title">Les droits de l'enfant</h6>
-                                                Pas de data
-                                            </div>
-                                            <div className='col-md-4'>
-                                                <h6 className="title">La protection de l'enfant en RDC</h6>
-                                                Pas de data
-                                            </div>
-
-                                            <div className='col-md-4'>
-                                                <h6 className="title">La formationde de professionnels de l'enfance</h6>
-                                                Pas de data
-                                            </div>
-                                        </div>
+                                    <div className="dropdown-menu  dropdown-large " style={{ width: "200px", borderRadius: 0, marginTop: "15px", padding: "10px" }}>
+                                        <Link>En savoir plus...</Link>
                                     </div>
                                 </li>
 
                                 <li className="nav-item dropdown">
                                     <Link className="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Nous soutenir </Link>
-                                    <div className="dropdown-menu  dropdown-large data1">
-                                        <div className="d-flex">
-                                            <div className='col-md-4'>
-                                                <h6 className="title">Les droits de l'enfant</h6>
-                                                Pas de data
-                                            </div>
-                                            <div className='col-md-4'>
-                                                <h6 className="title">La protection de l'enfant en RDC</h6>
-                                                Pas de data
-                                            </div>
-
-                                            <div className='col-md-4'>
-                                                <h6 className="title">La formationde de professionnels de l'enfance</h6>
-                                                Pas de data
-                                            </div>
-                                        </div>
+                                    <div className="dropdown-menu  dropdown-large " style={{ width: "200px", borderRadius: 0, marginTop: "15px", padding: "10px" }}>
+                                        <Link>En savoir plus...</Link>
                                     </div>
                                 </li>
 
                                 <li className="nav-item dropdown">
                                     <Link className="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Nous connaitre </Link>
-                                    <div className="dropdown-menu  dropdown-large data1">
-                                        <div className="d-flex">
-                                            <div className='col-md-4'>
-                                                <h6 className="title">Les droits de l'enfant</h6>
-                                                Pas de data
-                                            </div>
-                                            <div className='col-md-4'>
-                                                <h6 className="title">La protection de l'enfant en RDC</h6>
-                                                Pas de data
-                                            </div>
-                                            <div className='col-md-4'>
-                                                <h6 className="title">La formationde de professionnels de l'enfance</h6>
-                                                Pas de data
-                                            </div>
-                                        </div>
+                                    <div className="dropdown-menu  dropdown-large" style={{ width: "200px", borderRadius: 0, marginTop: "15px", padding: "10px" }}>
+                                        <Link>En savoir plus...</Link>
                                     </div>
                                 </li>
 
                                 <div className='rowDisplay'>
                                     <li>Recrutement</li>
-                                    <li>Actus</li>
+                                    <li>
+                                        <a href="#actus">
+                                            Actus
+                                        </a>
+                                    </li>
                                     <li>Publications</li>
                                     <li>Espace presse</li>
                                     <li>Transparence financière</li>

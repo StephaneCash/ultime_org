@@ -12,7 +12,7 @@ const Actus = () => {
     const actualites = list && list.length > 0 && list.slice(0, 3)
 
     return (
-        <div className='actus'>
+        <div className='actus' id="actus">
             <div className='title'>Actualités</div>
             <div className='grille'>
                 {

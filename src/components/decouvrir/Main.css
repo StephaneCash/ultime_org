@@ -4,3 +4,123 @@
     padding: 2rem 5rem;
 }
 
+.mainApps h5 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Poppins";
+    width: auto !important;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.mainApps .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    justify-content: space-between;
+}
+
+.mainApps .cards .card {
+    border-radius: 0;
+    height: 440px;
+    border: 0;
+}
+
+.mainApps .cards .card .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #555;
+    height: 100%;
+}
+
+.mainApps .cards .card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.mainApps .cards .card .card-body div {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.mainApps .cards .card a {
+    text-decoration: none;
+    color: #fff;
+    padding: .8rem 2rem;
+    background-color: #3c4043;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    width: 40%;
+}
+
+.mainApps .cards .card .card-footer {
+    border: 0;
+}
+
+@media screen and (max-width:1374px) {
+    .mainApps .cards .card a {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:1260px) {
+    .mainApps .cards .card a {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .mainApps .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        justify-content: space-between;
+    }
+    .mainApps{
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .mainApps .cards .card a {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width:1055px) {
+    .mainApps .cards .card a {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:990px) {
+    .mainApps .cards .card a {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width:932px) {
+    .mainApps .cards .card a {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:883px) {
+    .mainApps .cards .card a {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .mainApps .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        justify-content: space-between;
+    }
+    .mainApps{
+        padding: 1rem;
+    }
+}
