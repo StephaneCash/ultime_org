@@ -10,6 +10,7 @@ import Carte from '../components/carte/Carte'
 import Temoignages from '../components/temoignages/Temoignages'
 import RX from '../components/rx/RX'
 import Footer from '../components/footer/Footer'
+import Main from '../components/decouvrir/Main'
 
 const Home = () => {
     return (
@@ -23,6 +24,7 @@ const Home = () => {
             <Video />
             <Agir/>
             <Temoignages/>
+            <Main/>
             <RX/>
             <Footer/>
         </>

@@ -1,64 +1,47 @@
 import React from 'react';
 import "./Actus.css"
-import im3 from "../../assets/images/im5.jpeg";
-import im4 from "../../assets/images/im4.jpeg";
 import im5 from "../../assets/images/im4.jpeg";
+import { useSelector } from 'react-redux';
+import { baseUrlImage } from '../../bases/baseUrl';
+import { dateParserFunction } from '../../utils';
 
 const Actus = () => {
+
+    const list = useSelector(state => state.actualites.value);
+
+    const actualites = list && list.length > 0 && list.slice(0, 3)
+
     return (
         <div className='actus'>
             <div className='title'>Actualités</div>
             <div className='grille'>
-                <div className='card'>
-                    <div className='cardImage'>
-                        <img src={im5} alt="Actu1" />
-                    </div>
-                    <span>6 juin 2023</span>
-                    <div className='titleActus'>
-                        Le Groupe SOS à We Love Green !
-                    </div>
-                    <div className='descActus'>
-                        Cinq associations du Groupe SOS seront présentes au Village des Initiatives Positives du Festival We Love Green : Planète Urgence,…
-                    </div>
+                {
+                    actualites && actualites.length > 0 ? actualites.map(val => {
+                        return <div className='card'>
+                            <div className='cardImage'>
+                                <img src={baseUrlImage + "/" + val.url} alt="Actu1" />
+                            </div>
+                            <span>
+                                {dateParserFunction(val.createdAt)}
+                            </span>
+                            <div className='titleActus'>
+                                {
+                                    val && val.nom && val.nom.length > 50 ? val.nom.substring(0, 50) + "..." : val.nom
+                                }
+                            </div>
+                            <div className='descActus'>
+                                {
+                                    val && val.description && val.description.length > 200 ? val.description.substring(0, 200) + "..." : val.description
+                                }
+                            </div>
 
-                    <div className='button'>
-                        <button className='btn'>Lire la suite...</button>
-                    </div>
-                </div>
+                            <div className='button'>
+                                <button className='btn'>Lire la suite...</button>
+                            </div>
+                        </div>
 
-                <div className='card'>
-                    <div className='cardImage'>
-                        <img src={im4} alt="Actu1" />
-                    </div>
-                    <span>8 juin 2023</span>
-                    <div className='titleActus'>
-                        Le Groupe SOS à We Love Green !
-                    </div>
-                    <div className='descActus'>
-                        Cinq associations du Groupe SOS seront présentes au Village des Initiatives Positives du Festival We Love Green : Planète Urgence,…
-                    </div>
-
-                    <div className='button'>
-                        <button className='btn'>Lire la suite...</button>
-                    </div>
-                </div>
-
-                <div className='card'>
-                    <div className='cardImage'>
-                        <img src={im3} alt="Actu1" />
-                    </div>
-                    <span>6 juin 2023</span>
-                    <div className='titleActus'>
-                        Pour une Union européenne porteuse d’une ambition sociale et solidaire !
-                    </div>
-                    <div className='descActus'>
-                        Cinq associations du Groupe SOS seront présentes au Village des Initiatives Positives du Festival We Love Green : Planète Urgence,…
-                    </div>
-
-                    <div className='button'>
-                        <button className='btn'>Lire la suite...</button>
-                    </div>
-                </div>
+                    }) : "Chargement..."
+                }
 
             </div>
 

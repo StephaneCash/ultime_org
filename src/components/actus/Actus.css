@@ -37,7 +37,7 @@
 }
 
 .actus .card .cardImage img {
-    height: 100%;
+    height: 220px;
     width: 100%;
     object-fit: cover;
 }
@@ -55,7 +55,7 @@
 }
 
 .actus .card span {
-    color: #041e42;
+    color: #666;
     font-weight: bold;
 }
 
