@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../components/navbar/Navbar'
 import Don from '../components/formDon/Don'
 import Actus from '../components/actus/Actus'
 import Accueil from '../components/accueil/Accueil'
@@ -9,13 +8,11 @@ import Secteurs from '../components/secteurs/Secteurs'
 import Carte from '../components/carte/Carte'
 import Temoignages from '../components/temoignages/Temoignages'
 import RX from '../components/rx/RX'
-import Footer from '../components/footer/Footer'
 import Main from '../components/decouvrir/Main'
 
 const Home = () => {
     return (
-        <>
-            <Navbar />
+        <>  
             <Accueil />
             <Don />
             <Secteurs/>
@@ -26,7 +23,6 @@ const Home = () => {
             <Temoignages/>
             <Main/>
             <RX/>
-            <Footer/>
         </>
     )
 }

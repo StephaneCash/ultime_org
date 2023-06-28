@@ -46,6 +46,17 @@
     color: #000;
 }
 
+.nav-link {
+    color: #000 !important;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 600 !important;
+}
+
+.nav-link:hover{
+    color: #de5a28 !important;
+}
+
 .mainNavbar button {
     background-color: #3c4043;
     color: #fff;

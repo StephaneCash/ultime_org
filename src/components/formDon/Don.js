@@ -1,7 +1,13 @@
 import React from 'react'
 import "./Don.css"
+import { toast } from 'react-toastify'
 
 const Don = () => {
+
+    const donHandle = () =>{
+        toast("Service non disponible et encours de développement...")
+    }
+
     return (
         <div className='don'>
             <div className='title'>Soutenez la fondation</div>
@@ -36,7 +42,7 @@ const Don = () => {
                     </div>
                 </div>
                 <div className='btnJedonne'>
-                    <button className='btn'>Je donne maintenant</button>
+                    <button className='btn' onClick={()=>donHandle()}>Je donne maintenant</button>
                 </div>
             </div>
         </div>

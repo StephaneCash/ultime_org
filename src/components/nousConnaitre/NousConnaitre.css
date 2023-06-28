@@ -1,0 +1,47 @@
+.nousConnaitre .path {
+    display: flex;
+    align-items: center;
+    padding: 1rem 5rem;
+    background-color: #fff;
+    gap: 10px;
+}
+
+.nousConnaitre .path svg:first-child {
+    font-size: 1.3rem;
+}
+
+.nousConnaitre .accueilPath {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nousConnaitre .accueilPath a {
+    color: #000;
+}
+
+.nousConnaitre .mainNousConnaitre {
+    margin-top: 1rem;
+    background-color: #fff;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.nousConnaitre .mainNousConnaitre ul {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    justify-content: center;
+}
+
+.nousConnaitre .mainNousConnaitre ul li {
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nousConnaitre .mainNousConnaitre ul li.selected {
+    border-bottom: 2px solid #000;
+}

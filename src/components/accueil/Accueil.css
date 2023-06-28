@@ -1,143 +1,112 @@
 .acceuil {
-    height: 500px;
-    background-repeat: no-repeat;
-    background-size: contain;
     width: 100%;
-    background-color: #fff;
-}
-
-.acceuil .text {
-    width: 100%;
-    height: 100%;
-    padding: 5rem;
     display: flex;
     align-items: center;
-    justify-content: space-between !important;
-}
-
-.acceuil .imageContent {
-    width: 50%;
-    height: 100%;
-    position: relative;
-}
-
-.acceuil .text div:first-child {
-    color: #000;
-    font-weight: 700;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.smallTextAndBnt {
-    width: 90%;
-}
-
-.acceuil .text div:first-child .text-small {
-    font-size: 1rem;
-    text-align: justify;
-    width: 90%;
-    font-family: "Poppins", sans-serif;
-}
-
-.acceuil .divBtn {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
+    padding: 4.2rem 5rem;
+    background: #fff;
     justify-content: space-between;
 }
 
-.textTitle {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.acceuil .text {
+    width: 47%;
 }
 
-.acceuil .text div button {
+.acceuil p:first-child  strong {
+    font-weight: bold !important;
+    line-height: 6px;
+}
+
+.acceuil button {
     background-color: #3c4043;
-    border-radius: 3px;
     color: #fff;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 5px;
-    padding: 1rem;
-    font-size: 14px;
-    width: 30%;
-    box-shadow: none !important;
-    font-family: "Poppins", sans-serif;
 }
 
-.acceuil .text div:first-child h6 {
-    font-size: 50px;
-    font-weight: bold;
-    font-family: "Poppins", sans-serif;
+.acceuil .imagesCarrousel {
+    width: 49%;
+    height: 400px;
+    border: 1px solid #efefef;
+    border-radius: 7px;
 }
 
-.acceuil .text img {
-    position: absolute;
-    width: 100% !important;
-    height: 100%;
+.acceuil .imagesCarrousel img {
+    width: 100%;
+    height: 400px;
     object-fit: cover;
-    border: 0 !important;
-    border-radius: 30px;
+    border-radius: 7px;
 }
 
-@media screen and (max-width: 1080px) {
-    .acceuil .text div:first-child h6 {
-        font-size: 40px !important;
-    }
-
-    .acceuil .text div button {
-        width: 40%;
-    }
-
-    .acceuil .text {
-        padding: 2rem;
-    }
+.acceuil .carousel .thumbs {
+    display: none;
 }
 
-@media screen and (max-width: 842px) {
-    .acceuil .text div button {
-        width: 50%;
+.acceuil .carousel .slide .legend {
+    display: none !important;
+}
+
+@media screen and (max-width:1110px) {
+    .acceuil {
+        padding: 4.5rem 3rem;
     }
 }
 
-@media screen and (max-width: 900px) {
-    .acceuil .text div:first-child h6 {
-        font-size: 30px !important;
+@media screen and (max-width:1060px) {
+    .acceuil {
+        padding: 4.5rem 2rem;
+    }
+
+    .acceuil .textDiv p:first-child strong {
+        font-size: 35px !important;
     }
 }
 
-@media screen and (max-width: 740px) {
-    .acceuil .text div:first-child h6 {
-        font-size: 25px !important;
+@media screen and (max-width:110px) {
+    .acceuil p:first-child  strong {
+        line-height: normal;
     }
 }
 
-
-@media screen and (max-width: 700px) {
-    .acceuil .text {
+@media screen and (max-width:900px) {
+    .acceuil {
         flex-direction: column;
-        gap: 1rem;
+        padding: 2rem 1rem;
     }
 
-    .smallTextAndBnt {
+    .acceuil .text {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .acceuil .imagesCarrousel {
         width: 100%;
     }
+}
 
-    .acceuil .text div:first-child,
-    .acceuil .imageContent {
+@media screen and (max-width:500px) {
+    .acceuil button {
         width: 100%;
+        text-align: center;
+        justify-content: center;
     }
 
-    .acceuil .text div:first-child {
+    .acceuil .textDiv p:first-child  strong {
+        font-size: 25px !important;
+        padding: 0 !important;
+        width: 100%;
         text-align: center;
     }
 
-    .acceuil .text div button {
-        width: 100%;
+    .acceuil .textDiv p:first-child br{
+        display: none !important;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .acceuil .textDiv p:first-child strong{
+        font-size: 20px !important;
     }
 }

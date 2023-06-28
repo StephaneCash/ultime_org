@@ -78,11 +78,8 @@ const Navbar = () => {
                                     </div>
                                 </li>
 
-                                <li className="nav-item dropdown">
-                                    <Link className="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Nous connaitre </Link>
-                                    <div className="dropdown-menu  dropdown-large" style={{ width: "200px", borderRadius: 0, marginTop: "15px", padding: "10px" }}>
-                                        <Link>En savoir plus...</Link>
-                                    </div>
+                                <li className="nav-item ">
+                                    <Link to="/a-propos" className="nav-link " style={{ fontWeight: "bold" }}> Nous connaitre </Link>
                                 </li>
 
                                 <div className='rowDisplay'>

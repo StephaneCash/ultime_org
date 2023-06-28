@@ -17,7 +17,7 @@
 }
 
 .temoignages .mainContent {
-    height: 300px;
+    min-height: 300px;
     width: 60%;
     margin: auto;
     background: #ddd;
@@ -33,6 +33,7 @@
 .swiper-slide {
     text-align: center;
     margin-top: 10px;
+    min-height: 300px !important;
 }
 
 .swiper-slide .text {
@@ -104,4 +105,10 @@
     .swiper-pagination {
         margin-top: 78px !important;
     }
+
+    .temoignages .mainContent{
+        padding: 0;
+        width: 100% !important;
+    }
+
 }
