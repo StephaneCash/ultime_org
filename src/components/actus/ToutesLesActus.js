@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaHome, FaAngleRight } from "react-icons/fa"
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
@@ -11,6 +11,10 @@ const ToutesLesActus = () => {
   const actualites = useSelector(state => state.actualites.value);
 
   const [selectItem, setSelectItem] = useState(0);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+}, []);
 
   return (
     <div className='toutesActus'>
@@ -35,34 +39,61 @@ const ToutesLesActus = () => {
               })
               : "Chargement..." : "Pas de données disponibles"
           }
+          <li onClick={() => setSelectItem(0)}>Toutes les catégories</li>
         </ul>
 
         <div className='grille'>
           {
             actualites && actualites.length > 0 ? actualites.map(val => {
-              return <div className='card'>
-                <div className='cardImage'>
-                  <img src={baseUrlImage + "/" + val.url} alt="Actu1" />
-                </div>
-                <span>
-                  {dateParserFunction(val.createdAt)}
-                </span>
-                <div className='titleActus'>
-                  {
-                    val && val.nom && val.nom.length > 50 ? val.nom.substring(0, 50) + "..." : val.nom
-                  }
-                </div>
-                <div className='descActus'>
-                  {
-                    val && val.description && val.description.length > 200 ? val.description.substring(0, 200) + "..." : val.description
-                  }
-                </div>
+              if (selectItem) {
+                if (val && val.categorie && val.categorie.id === selectItem) {
+                  return <div className='card'>
+                    <div className='cardImage'>
+                      <img src={baseUrlImage + "/" + val.url} alt="Actu1" />
+                    </div>
+                    <span>
+                      {dateParserFunction(val.createdAt)}
+                    </span>
+                    <div className='titleActus'>
+                      {
+                        val && val.nom && val.nom.length > 50 ? val.nom.substring(0, 50) + "..." : val.nom
+                      }
+                    </div>
+                    <div className='descActus'>
+                      {
+                        val && val.description && val.description.length > 200 ? val.description.substring(0, 200) + "..." : val.description
+                      }
+                    </div>
 
-                <div className='linkGetActusById'>
-                  <Link to="/actus/">Lire la suite...</Link>
-                </div>
-              </div>
+                    <div className='linkGetActusById'>
+                      <Link to="/actus/">Lire la suite...</Link>
+                    </div>
+                  </div>
+                }
+              } else {
+                return <div className='card'>
+                  <div className='cardImage'>
+                    <img src={baseUrlImage + "/" + val.url} alt="Actu1" />
+                  </div>
+                  <span>
+                    {dateParserFunction(val.createdAt)}
+                  </span>
+                  <div className='titleActus'>
+                    {
+                      val && val.nom && val.nom.length > 50 ? val.nom.substring(0, 50) + "..." : val.nom
+                    }
+                  </div>
+                  <div className='descActus'>
+                    {
+                      val && val.description && val.description.length > 200 ? val.description.substring(0, 200) + "..." : val.description
+                    }
+                  </div>
 
+                  <div className='linkGetActusById'>
+                    <Link to="/actus/">Lire la suite...</Link>
+                  </div>
+                </div>
+              }
             }) : "Chargement..."
           }
         </div>
