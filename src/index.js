@@ -9,18 +9,21 @@ import actualitesSlice, { getAllactualites } from './reducers/Actualites';
 import { combineReducers } from "redux";
 import DocumentsSlice, { getAllDocuments } from './reducers/Documents';
 import imageSlice, { getAllimages } from './reducers/Images';
+import categorieActusSlice, { getAllcategoriesActus } from './reducers/CategorieActus';
 
 const store = configureStore({
   reducer: combineReducers({
     actualites: actualitesSlice.reducer,
     documents: DocumentsSlice.reducer,
     images: imageSlice.reducer,
+    categorieActus: categorieActusSlice.reducer,
   })
 });
 
 store.dispatch(getAllactualites());
 store.dispatch(getAllDocuments());
 store.dispatch(getAllimages());
+store.dispatch(getAllcategoriesActus());
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

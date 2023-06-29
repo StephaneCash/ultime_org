@@ -12,3 +12,15 @@
 .app {
   background-color: #efefef;
 }
+
+.carousel.carousel-slider .control-arrow {
+  position: absolute;
+  top: 50% !important;
+  height: 40px;
+  background-color: #dc642c !important;
+  width: 40px;
+  border-radius: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

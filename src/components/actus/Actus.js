@@ -4,6 +4,7 @@ import im5 from "../../assets/images/im4.jpeg";
 import { useSelector } from 'react-redux';
 import { baseUrlImage } from '../../bases/baseUrl';
 import { dateParserFunction } from '../../utils';
+import { Link } from 'react-router-dom';
 
 const Actus = () => {
 
@@ -46,9 +47,9 @@ const Actus = () => {
             </div>
 
             <div className='btnToutesActus'>
-                <button className='btn'>
-                    <div>Toutes les actualités </div>
-                </button>
+                <Link to="/actus">
+                    Toutes les actualités
+                </Link>
             </div>
         </div>
     )
