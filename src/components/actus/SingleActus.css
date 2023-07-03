@@ -1,0 +1,129 @@
+.singleActus {
+    width: 100%;
+}
+
+.singleActus .toolbar {
+    display: flex;
+    align-items: center;
+    padding: 1rem 5rem;
+    background-color: #fff;
+    gap: 10px;
+}
+
+.singleActus .accueilPath {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.singleActus .toolbar a {
+    color: #444;
+    text-decoration: none;
+}
+
+.singleActus .annonce {
+    background-color: #087564;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+}
+
+.singleActus .annonce .overPlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.586);
+}
+
+.singleActus .annonce .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.singleActus .annonce .theme {
+    width: 90%;
+    margin: auto;
+    color: #de5a28;
+    font-size: 2rem;
+    font-family: "Poppins";
+}
+
+.singleActus .annonce .title {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold;
+    width: 90%;
+    margin: auto;
+    font-family: "Poppins";
+}
+
+.singleActus .annonce .dateParser {
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+
+.singleActus .point {
+    width: 5px;
+    height: 5px;
+    color: #fff;
+    background-color: #fff;
+    border-radius: 120px;
+}
+
+.singleActus .categorie {
+    color: #ddd;
+    font-family: "Poppins";
+    border-bottom: 1px solid #ddd;
+}
+
+.singleActus .catDate {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    gap: 10px;
+}
+
+.singleActus .description {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 5rem;
+}
+
+.singleActus .description .title {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Poppins";
+}
+
+.singleActus .description .desc {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.singleActus .description .desc .text {
+    width: 60%;
+}
+
+.singleActus .description .desc .image {
+    width: 38%;
+    height: 400px;
+}
+
+.singleActus .description .desc .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}

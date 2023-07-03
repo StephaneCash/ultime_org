@@ -37,7 +37,11 @@ const Actus = () => {
                             </div>
 
                             <div className='button'>
-                                <button className='btn'>Lire la suite...</button>
+                                <Link to={{
+                                    pathname: `/actus/${val.nom}`
+                                }} state={{
+                                    val: val
+                                }} className='btn'>Lire la suite...</Link>
                             </div>
                         </div>
 

@@ -14,7 +14,7 @@ const ToutesLesActus = () => {
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-}, []);
+  }, []);
 
   return (
     <div className='toutesActus'>
@@ -90,7 +90,11 @@ const ToutesLesActus = () => {
                   </div>
 
                   <div className='linkGetActusById'>
-                    <Link to="/actus/">Lire la suite...</Link>
+                    <Link to={{
+                      pathname: `/actus/${val.nom}`
+                    }} state={{
+                      val: val
+                    }} className='btn'>Lire la suite...</Link>
                   </div>
                 </div>
               }

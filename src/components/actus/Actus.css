@@ -101,7 +101,8 @@
 }
 
 .toutesActus .accueilPath a {
-    color: #000;
+    color: #444;
+    text-decoration: none;
 }
 
 .toutesActus .mainContent {

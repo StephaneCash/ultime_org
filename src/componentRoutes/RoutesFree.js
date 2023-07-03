@@ -5,6 +5,7 @@ import NousConnaitre from '../components/nousConnaitre/NousConnaitre'
 import Navbar from '../components/navbar/Navbar'
 import Footer from '../components/footer/Footer'
 import ToutesLesActus from '../components/actus/ToutesLesActus'
+import SingleActus from '../components/actus/SingleActus'
 
 const RoutesFree = () => {
   return (
@@ -14,6 +15,7 @@ const RoutesFree = () => {
         <Route path='/' element={<Home />} />
         <Route path='/a-propos' element={<NousConnaitre />} />
         <Route path='/actus' element={<ToutesLesActus />} />
+        <Route path='/actus/:id' element={<SingleActus />} />
       </Routes>
       <Footer/>
     </BrowserRouter>
