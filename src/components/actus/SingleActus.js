@@ -22,6 +22,11 @@ const SingleActus = () => {
         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     }, []);
 
+    const nom = state && state.val && state.val.nom;
+
+    const desc = state && state.val && state.val.description;
+    const splitDesc = desc && desc.split('.');
+
     return (
         <div className='singleActus'>
             <div className='toolbar'>
@@ -31,7 +36,9 @@ const SingleActus = () => {
                 </div>
                 <FaAngleRight />
                 <Link to="/actus">Actualités</Link>
-                <FaAngleRight /> <span>{state && state.val && state.val.nom}</span>
+                <FaAngleRight /> <span>
+                    {nom && nom.length > 100 ? nom.substring(0, 100) + "..." : nom}
+                </span>
             </div>
 
             <div className='annonce' style={{ backgroundImage: `url(${baseUrlImage + "/" + img})` }}>
@@ -64,7 +71,13 @@ const SingleActus = () => {
                 </div>
                 <div className='desc'>
                     <div className='text'>
-                        {state && state.val && state.val.description}
+                        {
+                            splitDesc && splitDesc.map((val, i) => {
+                                return <p key={i}>
+                                    {splitDesc[i]}
+                                </p>
+                            })
+                        }
                     </div>
                     <div className='image'>
                         <img src={state && state.val && baseUrlImage + "/" + state.val.url} alt="" />

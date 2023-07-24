@@ -17,7 +17,7 @@ const Actus = () => {
             <div className='grille'>
                 {
                     actualites && actualites.length > 0 ? actualites.map(val => {
-                        return <div className='card'>
+                        return <div className='card' key={val.id}>
                             <div className='cardImage'>
                                 <img src={baseUrlImage + "/" + val.url} alt="Actu1" />
                             </div>

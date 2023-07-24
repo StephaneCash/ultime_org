@@ -65,7 +65,7 @@ const PubById = () => {
                     <div className='text'>
                         {
                             splitDesc && splitDesc.map((val, i) => {
-                                return <p>
+                                return <p key={i}>
                                     {splitDesc[i]}
                                 </p>
                             })

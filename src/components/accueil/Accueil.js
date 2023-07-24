@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import "./Accueil.css"
-import imgAc from "../../assets/images/main.jpg"
 import { FaArrowRight } from 'react-icons/fa';
 import { useSelector } from 'react-redux';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -19,6 +18,8 @@ const Accueil = () => {
     doc && doc.map(val => {
       if (val.nom === "accueilSite") {
         return div.innerHTML = val.description
+      } else {
+        return null
       }
     })
   }, [doc]);
@@ -54,7 +55,7 @@ const Accueil = () => {
           {
             imagesTrie && imagesTrie.length > 0 ?
               imagesTrie.map(value => {
-                return <div>
+                return <div key={value.id}>
                   <img src={baseUrlImage + "/" + value.url} alt={value.nom} />
                   <p className="legend">{value.nom}</p>
                 </div>
