@@ -66,9 +66,15 @@ const ToutesLesActus = () => {
                     </div>
 
                     <div className='linkGetActusById'>
-                      <Link to="/actus/">Lire la suite...</Link>
+                      <Link to={{
+                        pathname: `/actus/${val.nom}`
+                      }} state={{
+                        val: val
+                      }} className='btn'>Lire la suite...</Link>
                     </div>
                   </div>
+                } else {
+                  return null
                 }
               } else {
                 return <div className='card'>

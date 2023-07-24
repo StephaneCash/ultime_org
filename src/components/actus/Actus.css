@@ -166,7 +166,7 @@
 
 .toutesActus .mainContent .grille {
     display: grid;
-    grid-template-columns: repeat(4, 24%);
+    grid-template-columns: repeat(4, 23%);
     justify-content: space-between;
     height: auto;
 }
@@ -180,7 +180,7 @@
     border-radius: 0;
     text-align: left;
     background-color: #fff;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     cursor: pointer;
     transition: all .3s;
 }
@@ -215,7 +215,8 @@
 .toutesActus .linkGetActusById {
     background-color: #3c4043;
     padding: .7rem 2rem;
-    width: 50%;
+    width: 60%;
+    text-align: center;
 }
 
 .toutesActus .linkGetActusById a {
