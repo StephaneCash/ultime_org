@@ -7,6 +7,7 @@ import Footer from '../components/footer/Footer'
 import ToutesLesActus from '../components/actus/ToutesLesActus'
 import SingleActus from '../components/actus/SingleActus'
 import Publications from '../components/pubs/Publications'
+import PubById from '../components/pubs/PubById'
 
 const RoutesFree = () => {
   return (
@@ -18,8 +19,9 @@ const RoutesFree = () => {
         <Route path='/actus' element={<ToutesLesActus />} />
         <Route path='/actus/:id' element={<SingleActus />} />
         <Route path='/publications' element={<Publications />} />
+        <Route path='/publications/:id' element={<PubById />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </BrowserRouter>
   )
 }

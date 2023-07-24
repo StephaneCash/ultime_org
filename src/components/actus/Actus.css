@@ -128,7 +128,7 @@
 .toutesActus .text {
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 20%;
     transform: translate(-50%, -50%);
     color: #fff;
     font-weight: bold;

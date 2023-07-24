@@ -1,0 +1,134 @@
+.publications .path {
+    display: flex;
+    align-items: center;
+    padding: 1rem 5rem;
+    background-color: #fff;
+    gap: 10px;
+}
+
+.publications .path svg:first-child {
+    font-size: 1.3rem;
+}
+
+.publications .accueilPath {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.publications .accueilPath a {
+    color: #444;
+    text-decoration: none;
+}
+
+.publications .title {
+    padding:  2rem 5rem;
+}
+
+.publications h1 {
+    font-family: "Poppins";
+    font-weight: bold;
+}
+
+.publications .imageBg {
+    height: 100%;
+    background: url("../../assets/images/pub.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+}
+
+.publications .overPlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.publications .text {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: "Poppins";
+}
+
+.publications .grille {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-between;
+    padding: 2rem 5rem;
+}
+
+.publications .grille a {
+    text-decoration: none;
+    border-radius: 0;
+    border: 0;
+    height: 550px;
+    margin-bottom: 4.5rem;
+}
+
+
+.publications .grille a img {
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.publications .grille a .bodyCard {
+    height: 40%;
+    background-color: #df652d;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.publications .grille a .bodyCard a {
+    background-color: #df652d;
+}
+
+.publications .grille a .bodyCard span {
+    font-weight: bold;
+    font-family: "Poppins";
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+
+.publications .grille a .bodyCard .desc {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: #fff;
+}
+
+.publications .grille a .bodyCard .btn {
+    color: #fff;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.publications .grille a .bodyCard .btn svg {
+    font-size: 2rem;
+}
+
+.publications .lastBtn {
+    margin: 1rem auto 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.publications .lastBtn button {
+    border: 0;
+    background-color: #df652d;
+    padding: 1rem 2rem;
+    color: #fff;
+}

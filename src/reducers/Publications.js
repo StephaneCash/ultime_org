@@ -2,11 +2,11 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { baseUrl } from "../bases/baseUrl";
 
-export const getAllactualites = createAsyncThunk("actualites/getData", async (arg, {
+export const getAllPubs = createAsyncThunk("publications/getData", async (arg, {
     rejectWithValue
 }) => {
     try {
-        const { data } = await axios.get(`${baseUrl}/actualites`);
+        const { data } = await axios.get(`${baseUrl}/publications`);
         return data;
     } catch (error) {
         rejectWithValue(error.response);
@@ -14,8 +14,8 @@ export const getAllactualites = createAsyncThunk("actualites/getData", async (ar
 });
 
 
-export const actualitesSlice = createSlice({
-    name: "actualites",
+export const publicationSlice = createSlice({
+    name: "publications",
     initialState: {
         value: [],
         isSuccess: false,
@@ -23,20 +23,20 @@ export const actualitesSlice = createSlice({
     },
     extraReducers: {
 
-        [getAllactualites.pending]: (state, { payload }) => {
+        [getAllPubs.pending]: (state, { payload }) => {
             state.loading = true;
             state.isSuccess = false;
         },
-        [getAllactualites.fulfilled]: (state, { payload }) => {
+        [getAllPubs.fulfilled]: (state, { payload }) => {
             state.loading = false;
             state.value = payload;
             state.isSuccess = true;
         },
-        [getAllactualites.rejected]: (state, { payload }) => {
+        [getAllPubs.rejected]: (state, { payload }) => {
             state.loading = false;
             state.isSuccess = false;
         },
     }
 });
 
-export default actualitesSlice;
+export default publicationSlice;

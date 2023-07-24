@@ -10,6 +10,7 @@ import { combineReducers } from "redux";
 import DocumentsSlice, { getAllDocuments } from './reducers/Documents';
 import imageSlice, { getAllimages } from './reducers/Images';
 import categorieActusSlice, { getAllcategoriesActus } from './reducers/CategorieActus';
+import publicationSlice, { getAllPubs } from './reducers/Publications';
 
 const store = configureStore({
   reducer: combineReducers({
@@ -17,6 +18,7 @@ const store = configureStore({
     documents: DocumentsSlice.reducer,
     images: imageSlice.reducer,
     categorieActus: categorieActusSlice.reducer,
+    publications: publicationSlice.reducer,
   })
 });
 
@@ -24,6 +26,7 @@ store.dispatch(getAllactualites());
 store.dispatch(getAllDocuments());
 store.dispatch(getAllimages());
 store.dispatch(getAllcategoriesActus());
+store.dispatch(getAllPubs());
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
