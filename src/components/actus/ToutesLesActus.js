@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { FaHome, FaAngleRight } from "react-icons/fa"
+import { FaHome, FaAngleRight, FaListUl } from "react-icons/fa"
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { baseUrlImage } from '../../bases/baseUrl'
@@ -11,6 +11,8 @@ const ToutesLesActus = () => {
   const actualites = useSelector(state => state.actualites.value);
 
   const [selectItem, setSelectItem] = useState(0);
+
+  const [showItems, setShowItems] = useState(false);
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
@@ -31,18 +33,22 @@ const ToutesLesActus = () => {
           <div className='text'>Toutes nos actualités</div>
         </div>
 
-        <ul>
-            {
-              categoriesActus ? categoriesActus.length > 0 ?
-                categoriesActus.map(val => {
-                  return <li key={val.id} onClick={() => setSelectItem(val.id)} className={selectItem === val.id ? "selected" : ""}>{val.nom}</li>
-                })
-                : "Chargement..." : "Pas de données disponibles"
-            }
+        <div className='svgUl' onClick={() => setShowItems(!showItems)}>
+          <FaListUl />
+        </div>
+
+        <ul className={showItems ? "listItems open" : "listItems"}>
+          {
+            categoriesActus ? categoriesActus.length > 0 ?
+              categoriesActus.slice(0, 5).map(val => {
+                return <li key={val.id} onClick={() => setSelectItem(val.id)} className={selectItem === val.id ? "selected" : ""}>{val.nom}</li>
+              })
+              : "Chargement..." : "Pas de données disponibles"
+          }
 
           <li onClick={() => setSelectItem(0)}>Toutes les catégories</li>
           {
-             categoriesActus && categoriesActus.length > 6 && <li>Afficher plus...</li>
+            categoriesActus && categoriesActus.length > 6 && <li>Afficher plus...</li>
           }
         </ul>
 

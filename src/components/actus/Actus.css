@@ -223,6 +223,10 @@
     text-decoration: none;
 }
 
+.toutesActus .svgUl {
+    display: none;
+}
+
 @media screen and (max-width:1400px) {
     .toutesActus .mainContent .grille {
         grid-template-columns: repeat(3, 30%);
@@ -247,6 +251,29 @@
     .toutesActus .mainContent .grille {
         grid-template-columns: repeat(2, 46%);
     }
+
+    .toutesActus .listItems {
+        transform: translateX(-100%);
+        transition: transform 1s;
+    }
+
+    .toutesActus .svgUl {
+        display: block !important;
+        background-color: #df652d;
+        padding: 1rem;
+        color: #fff;
+    }
+
+    .toutesActus .svgUl svg {
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .toutesActus .listItems.open {
+        transform: translateX(0);
+        flex-direction: column;
+        height: 100vh;
+    }
 }
 
 @media screen and (max-width:700px) {
@@ -255,7 +282,7 @@
         flex-direction: column;
     }
 
-    .toutesActus .path{
+    .toutesActus .path {
         padding: 1rem;
     }
 }
