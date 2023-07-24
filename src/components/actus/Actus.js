@@ -1,6 +1,5 @@
 import React from 'react';
 import "./Actus.css"
-import im5 from "../../assets/images/im4.jpeg";
 import { useSelector } from 'react-redux';
 import { baseUrlImage } from '../../bases/baseUrl';
 import { dateParserFunction } from '../../utils';
