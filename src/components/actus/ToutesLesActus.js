@@ -32,14 +32,18 @@ const ToutesLesActus = () => {
         </div>
 
         <ul>
-          {
-            categoriesActus ? categoriesActus.length > 0 ?
-              categoriesActus.map(val => {
-                return <li key={val.id} onClick={() => setSelectItem(val.id)} className={selectItem === val.id ? "selected" : ""}>{val.nom}</li>
-              })
-              : "Chargement..." : "Pas de données disponibles"
-          }
+            {
+              categoriesActus ? categoriesActus.length > 0 ?
+                categoriesActus.map(val => {
+                  return <li key={val.id} onClick={() => setSelectItem(val.id)} className={selectItem === val.id ? "selected" : ""}>{val.nom}</li>
+                })
+                : "Chargement..." : "Pas de données disponibles"
+            }
+
           <li onClick={() => setSelectItem(0)}>Toutes les catégories</li>
+          {
+             categoriesActus && categoriesActus.length > 6 && <li>Afficher plus...</li>
+          }
         </ul>
 
         <div className='grille'>

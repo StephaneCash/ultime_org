@@ -254,4 +254,8 @@
         display: flex;
         flex-direction: column;
     }
+
+    .toutesActus .path{
+        padding: 1rem;
+    }
 }
