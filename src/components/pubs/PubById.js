@@ -25,6 +25,8 @@ const PubById = () => {
     const desc = state && state.val && state.val.description;
     const splitDesc = desc && desc.split('.');
 
+    const nom = state && state.val && state.val.nom;
+
     return (
         <div className='pubById'>
             <div className='toolbar'>
@@ -34,7 +36,9 @@ const PubById = () => {
                 </div>
                 <FaAngleRight />
                 <Link to="/publications">Publications</Link>
-                <FaAngleRight /> <span>{state && state.val && state.val.nom}</span>
+                <FaAngleRight /> <span>
+                    {nom && nom.length > 100 ? nom.substring(0, 100) + "..." : nom}
+                </span>
             </div>
 
             <div className='annonce' style={{ backgroundImage: `url(${baseUrlImage + "/" + img})` }}>
