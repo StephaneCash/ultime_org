@@ -95,7 +95,9 @@ const Navbar = () => {
                                             Actus
                                         </a>
                                     </li>
-                                    <li>Publications</li>
+                                    <Link to="/publications">
+                                        Publications
+                                    </Link>
                                     <li>Espace presse</li>
                                     <li>Transparence financière</li>
                                     <li>Espace donateur</li>
