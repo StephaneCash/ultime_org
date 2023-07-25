@@ -72,8 +72,9 @@
 
 @media screen and (max-width:900px) {
     .acceuil {
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding: 2rem 1rem;
+        gap: 2rem;
     }
 
     .acceuil .text {
@@ -95,9 +96,9 @@
 
     .acceuil .textDiv p:first-child  strong {
         font-size: 25px !important;
-        padding: 0 !important;
-        width: 100%;
+        width: 100% !important;
         text-align: center;
+        border: 2px solid red;
     }
 
     .acceuil .textDiv p:first-child br{
