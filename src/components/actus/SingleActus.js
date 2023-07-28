@@ -37,7 +37,7 @@ const SingleActus = () => {
                 <FaAngleRight />
                 <Link to="/actus">Actualités</Link>
                 <FaAngleRight /> <span>
-                    {nom && nom.length > 100 ? nom.substring(0, 100) + "..." : nom}
+                    {nom && nom.length > 30 ? nom.substring(0, 30) + "..." : nom}
                 </span>
             </div>
 

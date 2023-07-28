@@ -19,7 +19,7 @@ const Accueil = () => {
     let div = document.querySelector(".textDiv");
     doc && doc.map(val => {
       if (val.nom === "accueilSite") {
-        return div.innerHTML = val.description
+        return div.innerHTML = val.description  
       } else {
         return null
       }

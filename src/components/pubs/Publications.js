@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Publications.css"
 import { FaAngleRight, FaHome } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
@@ -9,9 +9,26 @@ import { FaRegFilePdf } from "react-icons/fa"
 const Publications = () => {
 
     const [cunt, setCunt] = useState(3);
+    const [windowSize, setWindowSize] = useState(
+        window.innerWidth
+    );
 
     const list = useSelector(state => state.publications.value);
-    const listPub = list && list.length > 0 && list.slice(0, cunt);
+    const listPub = list && list.length > 0 && list.slice(0,
+        windowSize <= 1150 ? cunt + 1 : cunt);
+
+    useEffect(() => {
+        function handleRezise() {
+            setWindowSize(window.innerWidth)
+        }
+
+        window.addEventListener('resize', handleRezise);
+
+        return () => window.removeEventListener('resize', handleRezise)
+
+    }, [windowSize]);
+
+    console.log(windowSize)
 
     return (
         <div className='publications'>

@@ -48,7 +48,7 @@ const PubById = () => {
                     <div className='title'>
                         {
                             state && state.val && state.val.nom
-                                && state.val.nom.length > 150 ? state.val.nom.substring(0, 150) + "..." : state.val.nom
+                                && state.val.nom.length > 30 ? state.val.nom.substring(0, 30) + "..." : state.val.nom
                         }
                     </div>
                     <div className='catDate'>
