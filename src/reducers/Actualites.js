@@ -13,7 +13,6 @@ export const getAllactualites = createAsyncThunk("actualites/getData", async (ar
     }
 });
 
-
 export const actualitesSlice = createSlice({
     name: "actualites",
     initialState: {
