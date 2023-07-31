@@ -11,8 +11,6 @@ const Accueil = () => {
   const doc = useSelector(state => state.documents.value);
   const images = useSelector(state => state.images.value);
 
-  const [desc, setDesc] = useState('')
-
   const [imagesTrie, setImagesTrie] = useState([])
 
   useEffect(() => {
